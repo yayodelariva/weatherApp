@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="bgImgDefault bgImgHot bgImgCold">
+      <div class="formWrapper">
+        <form action="#">
+          <label for="lang">Select a city: </label>
+          <select name="cities" id="city">
+            <option value="bangkok">Bangkok</option>
+            <option value="beijing">Beijing</option>
+            <option value="berlin">Berlin</option>
+            <option value="bogota">Bogota</option>
+            <option value="buenos_aires">Buenos Aires</option>
+            <option value="cairo">Cairo</option>
+            <option value="delhi">Delhi</option>
+            <option value="dhaka">Dhaka</option>
+            <option value="istanbul">Istanbul</option>
+            <option value="karachi">Karachi</option>
+            <option value="london">London</option>
+            <option value="los_angeles">Los Angeles</option>
+            <option value="mexico_city">Mexico City</option>
+            <option value="moscow">Moscow</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="new_york">New York</option>
+            <option value="osaka">Osaka</option>
+            <option value="paris">Paris</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="sao_paulo">Sao Paulo</option>
+            <option value="shanghai">Shangai</option>
+            <option value="tokyo">Tokyo</option>
+          </select>
+          <button class="submitBtn">Submit</button>
+        </form>
+      </div>
+
+      <div class="infoWrapper">
+        <div class="cityName">Mexico City</div>
+        <div class="localtimeContainer"></div>
+
+        <div class="currentDayTempContainer">
+          <img class="currentDayTempImg" src="#" />
+          <div class="currentDayTempText"></div>
+        </div>
+
+        <div class="minAndMaxTempContainer">
+          <div class="maxTempContainer">
+            <div class="currentDayMaxTempText"></div>
+          </div>
+          <div class="minTempContainer">
+            <div class="currentDayMinTempText"></div>
+          </div>
+        </div>
+
+        <div class="futureDaysContainer">
+          <div class="day2Container">
+            <div class="day2Name"></div>
+            <img class="day2TempImg" src="#" alt="" />
+            <div class="day2TempText"></div>
+          </div>
+          <div class="day3Container">
+            <div class="day3Name"></div>
+            <img class="day3TempImg" src="#" alt="" />
+            <div class="day3TempText"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
