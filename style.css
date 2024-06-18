@@ -1,37 +1,135 @@
+@font-face {
+  font-family: "TypefaceMario64";
+  src: url(fonts/TypefaceMario64-ywA93.otf) format("opentype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 html,
 body {
+  margin: 0;
   height: 100%;
+  font-family: "Cabin", sans-serif;
 }
 .bgImgDefault {
-  background: green;
+  padding-top: 0.2rem;
+  background-image: url(img/homepagebg.png);
   height: 100%;
   background-size: cover;
 }
 .bgImgHot {
+  padding-top: 0.2rem;
   background: linear-gradient(#ebd682, #ebae82, #95beca);
   height: 100%;
 }
 .bgImgCold {
+  padding-top: 0.2rem;
   background: linear-gradient(#27044a, #1c2a53, #354246);
   height: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  background-color: rgba(39, 39, 39, 0.46);
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.logo {
+  font-family: "TypefaceMario64";
+  color: #f0e9c1;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
 }
 .formWrapper {
   display: flex;
   justify-content: center;
+  background-color: rgba(39, 39, 39, 0.46);
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: #f0e9c1;
+}
+.submitBtn {
+  border-radius: 25px;
+  border-style: none;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+#city {
+  border-radius: 4px;
+  border-style: none;
+}
+.infoContainer {
+  display: flex;
+  justify-content: center;
+}
+.infoAndForecastWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  color: #f0e9c1;
 }
 .infoWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 32rem;
+  padding: 2rem 2rem;
+  background-color: rgba(39, 39, 39, 0.46);
+  border-radius: 10px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cityName {
+  font-size: 2em;
 }
 .currentDayTempContainer {
   display: flex;
   align-items: center;
 }
+.currentDayTempText {
+  font-size: 2.2em;
+}
 .minAndMaxTempContainer {
   display: flex;
   gap: 3rem;
 }
-.futureDaysContainer {
+.forecastContainer {
   display: flex;
+  justify-content: center;
+}
+.forecastWrapper {
+  background-color: rgba(39, 39, 39, 0.46);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 5rem;
+  padding: 2rem 6.2rem;
+}
+.day2Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day3Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day2Name,
+.day3Name {
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 0.7em;
+  color: #f0e9c1;
 }
