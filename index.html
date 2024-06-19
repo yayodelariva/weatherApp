@@ -37,10 +37,18 @@
         <div class="infoContainer">
           <div class="infoWrapper" style="display: none">
             <div class="cityName"></div>
+            <div class="regionAndCountry"></div>
             <div class="localtimeContainer"></div>
             <div class="currentDayTempContainer">
               <img class="currentDayTempImg" src="#" />
               <div class="currentDayTempText"></div>
+            </div>
+            <div class="tempToggleContainer">
+              <label class="switch">
+                <input id="tempSlider" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <div class="tempTag">C° | F°</div>
             </div>
             <div class="minAndMaxTempContainer">
               <div class="maxTempContainer">
@@ -67,12 +75,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        Powered by
-        <a href="https://www.weatherapi.com/" title="Free Weather API"
-          >WeatherAPI.com</a
-        >
+        <div class="footer">
+          Powered by
+          <a href="https://www.weatherapi.com/" title="Free Weather API"
+            >WeatherAPI.com</a
+          >
+        </div>
       </div>
     </div>
 

@@ -129,7 +129,158 @@ body {
 }
 .footer {
   text-align: center;
-  margin-top: 15rem;
+  margin-top: 9rem;
   font-size: 0.7em;
   color: #f0e9c1;
+}
+
+/* temp slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: orange;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tempTag {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* responsive stuff */
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bgImgDefault,
+  .bgImgCold,
+  .bgImgHot {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .logoContainer {
+    display: flex;
+    padding-bottom: 1rem;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .infoAndForecastWrapper {
+    display: flex;
+    margin-top: 0;
+    gap: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .infoWrapper {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .forecastContainer {
+    display: flex;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .forecastWrapper {
+    display: flex;
+    background-color: none;
+    width: 100%;
+    gap: 4rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 3rem;
+  }
 }
